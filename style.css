@@ -1,0 +1,1095 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppis', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #30C019;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #41ee26;
+}
+
+section {
+    padding: 0px 135px;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    background: #141518;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+header .logo h4 {
+    color: #30C019;
+    font-family: 'Poppins';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+header .navigation {
+    position: relative;
+}
+
+header .navigation a {
+    color: #CCCCCC;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-left: 40px;
+    list-style: none;
+}
+
+header .navigation #marker {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #30C019;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 4px;
+    color: #30C019;
+}
+
+header .navigation a:hover {
+    color: #30C019;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #0E0D0D;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.content h1 {
+    color: #30C019;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 127%;
+}
+
+.content h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 24px;
+    color: #CCCCCC;
+}
+
+.home .icones {
+    position: relative;
+    left: 260px;
+    font-size: 26px;
+    transform: rotate(20deg);
+}
+
+.home .icones ul li {
+    list-style: none;
+    position: relative;
+}
+
+.home .icones ul li i {
+    color: #141518;
+    transition: 1s;
+    padding-left: 22px;
+    user-select: none;
+    cursor: default;
+    font-weight: 900;
+}
+
+.home .icones ul li i:hover {
+    color: #30C019;
+    text-shadow: 0 0 80px #30C019;
+    transition: 0s;
+}
+
+.home .icones ul {
+    animation: animate 60s linear infinite;
+    animation-delay: -60s;
+}
+
+.icones:nth-child(2) ul {
+    animation: animate2 60s linear infinite;
+    animation-delay: -30s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-50%)
+    }
+    100% {
+        transform: translateY(40%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(-30%);
+    }
+}
+
+.home .icones ul {
+    animation: animate3 60s linear infinite;
+    animation-delay: -60s;
+}
+
+.icones:nth-child(even) ul {
+    animation: animate4 60s linear infinite;
+    animation-delay: -30s;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateY(40%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(50%);
+    }
+}
+
+.about {
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    min-height: 120vh;
+    background: #111111;
+}
+
+.about .linha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.about .linha div {
+    height: 2px;
+    width: 70px;
+    border: #30C019 1px solid;
+    background-color: #30C019;
+    margin-right: 8px;
+}
+
+.about .linha h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #CCCCCC;
+}
+
+.about .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .content .col-left {
+    position: relative;
+    width: 80%;
+}
+
+.about .content .col-rigth {
+    position: relative;
+    width: 10%;
+}
+
+.about h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.about p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #CCCCCC;
+}
+
+button {
+    margin-bottom: 120px;
+}
+
+div .bntcurriculo {
+    width: 170px;
+    height: 50px;
+    background: #111111;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #30C019;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: 1px solid #30C019;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+div .bntcurriculo:hover {
+    color: #FFFFFF;
+    background-color: #30C019;
+}
+
+div .github {
+    width: 230px;
+    height: 50px;
+    background: #111111;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #30C019;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: 1px solid #30C019;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+div .github:hover {
+    color: #FFFFFF;
+    background-color: #30C019;
+}
+
+.about .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+}
+
+.about .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+}
+
+.qualificacao {
+    display: flex;
+    gap: 100px;
+}
+
+.qualificacao ul {
+    gap: 21px 90px;
+}
+
+.qualificacao ul li {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    list-style: none;
+    color: #FFFFFF;
+    margin-top: 17px;
+}
+
+.qualificacao ul li check {
+    color: #30C019;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.portfolio {
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 260vh;
+    align-items: center;
+    background: #0E0D0D;
+}
+
+.portfolio .linha {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.portfolio .linha div {
+    height: 2px;
+    width: 70px;
+    border: #30C019 1px solid;
+    background-color: #30C019;
+}
+
+.portfolio .linha h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #CCCCCC;
+    margin-left: 8px;
+}
+
+.portfolio h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.cardprojetos .card1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.card1 img {
+    margin-left: 50px;
+    width: 420px;
+    height: 340.2px;
+}
+
+.card1 div h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.card1 div p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #CCCCCC;
+}
+
+.card1 .bntgit {
+    width: 170px;
+    height: 50px;
+    left: 85px;
+    top: 714px;
+    background: #0E0D0D;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #30C019;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    margin-right: 16px;
+    border: 1px solid #30C019;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.card1 .bntgit:hover {
+    background: #30C019;
+    color: #FFFFFF;
+}
+
+.bntSite {
+    width: 170px;
+    height: 50px;
+    left: 85px;
+    top: 714px;
+    background: #30C019;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    margin-right: 16px;
+    border: 1px solid #30C019;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.bntSite:hover {
+    background-color: #0E0D0D;
+    color: #30C019;
+}
+
+.cardprojetos .card2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.card2 div h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.card2 div p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    color: #CCCCCC;
+}
+
+.card2 .bntgit {
+    width: 170px;
+    height: 50px;
+    left: 85px;
+    top: 714px;
+    background: #0E0D0D;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #30C019;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    margin-right: 16px;
+    border: 1px solid #30C019;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.card2 .bntgit:hover {
+    background: #30C019;
+    color: #FFFFFF;
+}
+
+.cardprojetos .card3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin-bottom: 120px;
+}
+
+.card3 div h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.card3 div p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    color: #CCCCCC;
+}
+
+.card3 .bntgit {
+    width: 170px;
+    height: 50px;
+    left: 85px;
+    top: 714px;
+    background: #0E0D0D;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #30C019;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    margin-right: 16px;
+    border: 1px solid #30C019;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.card3 .bntgit:hover {
+    background: #30C019;
+    color: #FFFFFF;
+}
+
+.skills {
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background: #111111;
+}
+
+.skills .linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .linha div {
+    height: 2px;
+    width: 70px;
+    border: #30C019 1px solid;
+    background-color: #30C019;
+}
+
+.skills .linha h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #CCCCCC;
+    margin-left: 8px;
+}
+
+.skills h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.skills p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #CCCCCC;
+}
+
+.contact {
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background: #0E0D0D;
+}
+
+.contact .linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .linha div {
+    height: 2px;
+    width: 70px;
+    border: #30C019 1px solid;
+    background-color: #30C019;
+}
+
+.contact .linha h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #CCCCCC;
+    margin-left: 8px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.contact .socialMidia {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 57px;
+}
+
+.contact .socialMidia .content {
+    width: 270px;
+    height: 184px;
+    background: #111111;
+    border-radius: 8px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: 0.9s;
+}
+
+.contact .socialMidia .content:hover {
+    transform: translateY(-20px);
+}
+
+.iconMedia {
+    color: #30C019;
+    font-size: 42px;
+}
+
+.contact .socialMidia .text h6 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    padding-top: 24px;
+}
+
+.contact .socialMidia .text a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #CCCCCC;
+    padding-top: 2px;
+}
+
+.cardProgramas {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 36%;
+    left: 30%;
+    gap: 30px;
+}
+
+.card2Programas {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 69%;
+    left: 30%;
+    gap: 30px;
+}
+
+.card {
+    width: 170px;
+    height: 166px;
+    background: #141518;
+    border-radius: 8px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.card span {
+    position: absolute;
+    cursor: default;
+    width: 170px;
+    height: 30px;
+    background: #141518;
+    top: -35px;
+    color: #30C019;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    opacity: 0;
+}
+
+.card span:hover {
+    opacity: 1;
+}
+
+.card div {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 7px;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 161px;
+    border-radius: 8px;
+    background: #30C019;
+    ;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card:hover:after {
+    width: 170px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: 0.5s;
+}
+
+.footer {
+    background: #111111;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.footer p a {
+    color: #30C019;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer div p a {
+    color: #30C019;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text img {
+    position: absolute;
+    padding-top: 26px;
+    padding-left: 200px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media (max-width: 1040px) {
+    section {
+        padding: 0 15px;
+    }
+    header {
+        padding: 12px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        z-index: 888;
+        position: fixed;
+        background: #141518;
+        top: 0;
+        right: 0;
+        width: 395px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+        transition: 0.3s ease;
+    }
+    header .navigation a {
+        color: rgb(204, 204, 204);
+        margin: 10px;
+        list-style: none;
+    }
+    header .navigation a:hover {
+        background: #30C019;
+        padding: 0 15px;
+        border-radius: 20px;
+        color: #0E0D0D;
+    }
+    .toggle {
+        position: absolute;
+        background: url(./Imagens/menu.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .toggle.active {
+        z-index: 999;
+        background: url(./Imagens/close.png) no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3 ease;
+    }
+    .home .icones ul {
+        display: none;
+    }
+    .home {
+        padding: 350px 10px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .content h1 {
+        font-size: 38px;
+        line-height: 110%;
+        padding-bottom: 7px;
+    }
+    .content h3 {
+        font-size: 19px;
+        line-height: 32px;
+    }
+    .about .content {
+        padding: 48px 16px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about .content .col-left {
+        position: relative;
+        width: 99%;
+    }
+    .about .img-card img {
+        top: 0;
+        width: 280px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        display: flex;
+    }
+    .about .img-card {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+        min-height: 300px;
+    }
+    .about h2 {
+        padding-top: 20px;
+        font-size: 26px;
+    }
+    .about p {
+        font-size: 15px;
+        line-height: 21px;
+        text-align: left;
+    }
+    div .bntcurriculo {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    div .github {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .about .button {
+        align-items: center;
+    }
+    .portfolio {
+        padding: 48px 16px;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .cardprojetos .card1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardprojetos img {
+        width: 310px;
+        height: 250px;
+    }
+    .cardprojetos .card2 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cardprojetos .card3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills {
+        height: 186vh;
+    }
+    .skills h2 {
+        font-size: 28px;
+    }
+    .card2Programas {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        top: 63%;
+        align-items: center;
+        padding-top: 30px;
+        left: 25%;
+    }
+    .cardProgramas {
+        flex-direction: column;
+        align-items: center;
+        top: 16%;
+        left: 25%;
+    }
+    .card:hover:after {
+        display: none;
+    }
+    .card1 div h3 {
+        margin-left: 40px;
+    }
+    .card1 div p {
+        margin-left: 40px;
+        line-height: 21px;
+    }
+    .bntSite {
+        width: 140px;
+        margin-left: 40px;
+    }
+    .card1 .bntgit {
+        width: 140px;
+    }
+    .card2 div h3 {
+        margin-left: 40px;
+    }
+    .card2 div p {
+        margin-left: 40px;
+        line-height: 21px;
+    }
+    .card2 .bntgit {
+        width: 140px;
+    }
+    .card3 div h3 {
+        margin-left: 40px;
+    }
+    .card3 div p {
+        margin-left: 40px;
+        line-height: 21px;
+    }
+    .card3 .bntgit {
+        width: 140px;
+    }
+    .contact {
+        height: 100%;
+    }
+    .contact .socialMidia {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 57px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-bottom: 30px;
+    }
+    .contact h2 {
+        font-size: 35px;
+    }
+    .footer {
+        padding: 1em 2em;
+        gap: 40px;
+    }
+    .contact .socialMidia .content:hover {
+        transform: translateY(0px);
+    }
+}
