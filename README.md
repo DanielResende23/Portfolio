@@ -6,7 +6,8 @@
   Portfólio criado com o intuito de mostrar meus projetos ao decorrer da minha carreira.
 </h4>
 
-![Resultado final do projeto](  <img alt="Starbucks" title="#Starbucks" src="./Imagens/Group 30.jpg"/>)
+![Resultado final do projeto](  <img alt="Starbucks" title="#Starbucks" src="./Imagens/Group 30.jpg">)
+
 
 <h4 align="center"><a href="https://danielresende23.github.io/Portfolio/">Clique para visitar o projeto</a></h4>
 
