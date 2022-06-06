@@ -364,7 +364,7 @@ div .github:hover {
     padding-top: 100px;
     position: relative;
     width: 100%;
-    height: 260vh;
+    height: 100%;
     align-items: center;
     background: #0E0D0D;
 }
