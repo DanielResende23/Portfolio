@@ -364,7 +364,7 @@ div .github:hover {
     padding-top: 100px;
     position: relative;
     width: 100%;
-    height: 100%;
+    
     align-items: center;
     background: #0E0D0D;
 }
@@ -402,6 +402,7 @@ div .github:hover {
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
+    padding-bottom: 50px;
 }
 
 .cardprojetos .card1 {
@@ -495,7 +496,7 @@ div .github:hover {
 .cardprojetos .card2 {
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .card2 div h3 {
@@ -549,7 +550,7 @@ div .github:hover {
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
-    margin-bottom: 120px;
+    
 }
 
 .card3 div h3 {
@@ -861,9 +862,23 @@ div .github:hover {
     opacity: 1;
 }
 
-@media (max-width: 1040px) {
+.teste{
+    position:absolute;
+    align-content: center;
+    top: 350px;
+    left:275px;
+    
+}
+
+@media (max-width: 1200px) {
     section {
         padding: 0 15px;
+    }
+    .teste{
+        display: none;
+    }
+    .img2{
+        display: none;
     }
     header {
         padding: 12px 20px;
@@ -1092,4 +1107,5 @@ div .github:hover {
     .contact .socialMidia .content:hover {
         transform: translateY(0px);
     }
+
 }
