@@ -510,9 +510,31 @@ div .github:hover {
     color: #FFFFFF;
 }
 
+.titulo{
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
 .card2 div p {
     font-family: Poppins;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    color: #CCCCCC;
+}
+
+.paragrafo{
+    
+    font-family: Poppins;
+    font-size: 16px;
+    
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
