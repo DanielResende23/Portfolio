@@ -1,0 +1,31 @@
+<svg width="476" height="630" viewBox="0 0 476 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M449.5 0H282.5C268.141 0 256.5 11.6406 256.5 26V604C256.5 618.359 268.141 630 282.5 630H449.5C463.859 630 475.5 618.359 475.5 604V26C475.5 11.6406 463.859 0 449.5 0Z" fill="url(#paint0_linear_258_6)"/>
+<g filter="url(#filter0_d_258_6)">
+<path d="M346.5 604V630H320.5H153.5C139.141 630 127.5 618.359 127.5 604V183C127.5 168.641 139.141 157 153.5 157H320.5C334.859 157 346.5 168.641 346.5 183V604Z" fill="black"/>
+</g>
+<path d="M346.5 604V630H320.5H153.5C139.141 630 127.5 618.359 127.5 604V183C127.5 168.641 139.141 157 153.5 157H320.5C334.859 157 346.5 168.641 346.5 183V604Z" fill="url(#paint1_linear_258_6)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M219.5 604V630H193.5H26.5C12.1406 630 0.5 618.359 0.5 604V341C0.5 326.641 12.1406 315 26.5 315H193.5C207.859 315 219.5 326.641 219.5 341V604Z" fill="url(#paint2_linear_258_6)"/>
+<defs>
+<filter id="filter0_d_258_6" x="127.5" y="147" width="259" height="513" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="20" dy="10"/>
+<feGaussianBlur stdDeviation="10"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0530212 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_258_6"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_258_6" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_258_6" x1="366" y1="0" x2="366" y2="630" gradientUnits="userSpaceOnUse">
+<stop stop-color="#24D208"/>
+<stop offset="1" stop-color="#299105"/>
+</linearGradient>
+<linearGradient id="paint1_linear_258_6" x1="237" y1="157" x2="237" y2="630" gradientUnits="userSpaceOnUse">
+<stop stop-color="#29F308"/>
+<stop offset="1" stop-color="#6BFA39"/>
+</linearGradient>
+<linearGradient id="paint2_linear_258_6" x1="110" y1="315" x2="110" y2="630" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4AF951"/>
+<stop offset="1" stop-color="#80FB6C"/>
+</linearGradient>
+</defs>
+</svg>
