@@ -899,6 +899,10 @@ div .github:hover {
     .teste{
         display: none;
     }
+    .dashboard{
+        display: none
+        
+    }
     .img2{
         display: none;
     }
@@ -1034,7 +1038,7 @@ div .github:hover {
         line-height: 30px;
     }
     .cardprojetos .card1 {
-        flex-direction: column;
+        flex-direction: column-reverse ;
         align-items: center;
     }
     .cardprojetos img {
