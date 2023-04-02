@@ -252,7 +252,7 @@ header .navigation a:hover {
     font-weight: 600;
     font-size: 40px;
     line-height: 60px;
-    margin-bottom: 16px;
+    margin-bottom: 1px;
     color: #FFFFFF;
 }
 
@@ -403,6 +403,43 @@ div .github:hover {
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 50px;
+}
+
+.slider{
+    width: 99vw;
+    height: auto;
+    margin-left: -140px;
+    overflow: hidden;
+}
+
+.slider .slide-track{
+    display: flex;
+    animation:scroll 60s linear infinite;
+    -webkit-animation: scroll 60s linear infinite ;
+    width: calc(450px * 16);
+}
+
+.slider .slide {
+    padding-top: 50px;
+    width: 500px;
+}
+
+.slider .slide img {
+    width: 450px;
+    height: 260px;
+    padding: 4px;
+
+}
+
+@keyframes scroll{
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 16));
+        transform: translateX(calc(-200px * 16));
+    }
 }
 
 .cardprojetos .card1 {
@@ -661,6 +698,7 @@ div .github:hover {
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
+    margin-top: -40px;
 }
 
 .skills p {
@@ -794,7 +832,7 @@ div .github:hover {
     width: 170px;
     height: 30px;
     background: #141518;
-    top: -35px;
+    top:-3;
     color: #30C019;
     border-radius: 8px;
     text-align: center;
@@ -803,7 +841,7 @@ div .github:hover {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    opacity: 0;
+    opacity: 1;
 }
 
 .card span:hover {
