@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link rel="shortcut icon" type="imagem/ico" href="./Imagens/coding.ico">
     <link rel="stylesheet" href="style.css">
-    <title>Daniel Resende – Portfólio</title>
+    <title>Daniel Resende | Portfólio de Dados</title>
+    <meta name="description" content="Daniel Resende, consultor de BI e dados. Desenvolvimento de dashboards executivos, Power BI, SQL, automação, modelagem de dados e governança de indicadores.">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -21,15 +22,17 @@
 
             <div class="logo">
                 <h4>Resende
-                    <icone class="fa-solid fa-code"></icone>
+                    <i class="fa-solid fa-code"></i>
                 </h4>
             </div>
-            <div class="toggle" onclick="toggleMenu()"></div>
+            <button class="toggle" type="button" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false"></button>
             <nav class="navigation">
                 <div id="marker"></div>
-                <a href="#home">Inicio</a>
+                <a href="#home">Início</a>
                 <a href="#about">Sobre Mim</a>
+                <a href="#services">Serviços</a>
                 <a href="#portfolio">Projetos</a>
+                <a href="#cases">Cases</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contato</a>
             </nav>
@@ -37,9 +40,46 @@
 
         <section class="home" id="home">
             <div class="content">
-                <h1>Seja bem vindo <br> ao meu portfólio!</h1>
-                <h3>Aqui você poderá conhecer mais <br> sobre mim e sobre meus projetos</h3>
+                <span class="eyebrow">Olá</span>
+                <h1>Sou <span>Daniel Resende</span>, <em>Consultor de BI & Dados</em>.</h1>
+                <h3>Transformo dados, processos e indicadores em decisões executivas mais claras, rápidas e orientadas a resultado.</h3>
+                <div class="hero-actions">
+                    <a class="primary-action" href="#portfolio">Ver projetos</a>
+                    <a class="secondary-action" href="#contact">Falar comigo</a>
+                </div>
             </div>
+            <aside class="hero-visual" aria-label="Apresentação de Daniel Resende">
+                <div class="hero-portrait-card">
+                    <div class="portrait-orbit"></div>
+                    <img src="./Imagens/perfil-daniel.jpg" alt="Foto de Daniel Resende">
+                    <div class="hero-proof proof-left">
+                        <strong>+50</strong>
+                        <span>soluções desenvolvidas</span>
+                    </div>
+                    <div class="hero-proof proof-right">
+                        <strong>+30</strong>
+                        <span>empresas atendidas</span>
+                    </div>
+                </div>
+                <div class="hero-services">
+                    <div class="services-title">
+                        <span>Consultoria em BI</span>
+                        <strong>dados aos objetivos</strong>
+                    </div>
+                    <article>
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h4>Dashboards executivos</h4>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-database"></i>
+                        <h4>Modelagem de dados</h4>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-gears"></i>
+                        <h4>Automação de processos</h4>
+                    </article>
+                </div>
+            </aside>
             <div class="icones">
 
                 <ul>
@@ -579,36 +619,63 @@
                     <p class="reveal" >Como profissional experiente em análise de dados e inteligência de negócios, sou dedicado e apaixonado por transformar dados em insights acionáveis para impulsionar o sucesso das empresas. Minha expertise inclui a coleta, processamento e análise eficiente de grandes conjuntos de dados, fornecendo informações valiosas para orientar decisões estratégicas e criar vantagem competitiva.</p>
                         <p>Com sólidos conhecimentos técnicos e habilidades analíticas, desenvolvo soluções inteligentes e inovadoras para os desafios de negócios mais complexos. Utilizo ferramentas como Power BI para criar dashboards dinâmicos e interativos, proporcionando uma visão abrangente do desempenho empresarial e identificando oportunidades de melhoria.</p>
                         <p>Se sua empresa busca um especialista em análise de dados e inteligência de negócios comprometido em maximizar o potencial dos seus dados, estou pronto para colaborar. </p>
-                      </body>
                     <div class="qualificacao reveal">
                         <ul>
                             <li>
-                                <check class="fa-solid fa-circle-check"></check>Analítico</li>
+                                <i class="fa-solid fa-circle-check"></i>Analítico</li>
                             <li>
-                                <check class="fa-solid fa-circle-check"></check>Resiliente</li>
+                                <i class="fa-solid fa-circle-check"></i>Resiliente</li>
                         </ul>
                         <ul>
                             <li>
-                                <check class="fa-solid fa-circle-check"></check>Estratégico 
+                                <i class="fa-solid fa-circle-check"></i>Estratégico 
                             </li>
                             <li>
-                                <check class="fa-solid fa-circle-check"></check>Autodidata
+                                <i class="fa-solid fa-circle-check"></i>Autodidata
                             </li>
                         </ul>
                     </div>
                     <div class="button">
-                        <a class="reveal" href="./Imagens/Currículo Daniel Resende.pdf" target="_blank"><button class="bntcurriculo"><span></span> Download CV <download class="ti ti-arrow-bar-to-down"></download></button>
-                        <a class="reveal" href="https://github.com/DanielResende23" target="_blank"><button class="github"><span></span>Ver perfil no GitHub <git class="ti ti-brand-github"></git></button></a>
+                        <a class="reveal" href="./Imagens/Currículo Daniel Resende.pdf" target="_blank"><button class="bntcurriculo"><span></span> Download CV <i class="ti ti-arrow-bar-to-down"></i></button></a>
+                        <a class="reveal" href="https://www.linkedin.com/in/daniel-resend/" target="_blank"><button class="github"><span></span>Ver perfil no LinkedIn <i class="fa-brands fa-linkedin"></i></button></a>
                     </div>
                 </div>
-                <div class="colum col-rigth reveal">
-                    <div class="img-card">
-                        <img src="./Imagens/imagem.png">
-                    </div>
-                </div>
-
             </div>
         </section>
+
+        <section class="services" id="services">
+            <div class="linha reveal">
+                <div></div>
+                <h6>Serviços</h6>
+            </div>
+            <div class="section-heading reveal">
+                <h2>Como posso ajudar sua empresa</h2>
+                <p>Atuação consultiva para transformar dados dispersos em indicadores confiáveis, automações e decisões mais rápidas.</p>
+            </div>
+            <div class="services-grid reveal">
+                <article>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h3>Diagnóstico de BI</h3>
+                    <p>Mapeamento de dores, fontes de dados, indicadores críticos e oportunidades de melhoria nos processos analíticos.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h3>Dashboards executivos</h3>
+                    <p>Criação de painéis em Power BI com foco em leitura gerencial, performance, filtros úteis e storytelling visual.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Modelagem de dados</h3>
+                    <p>Estruturação de bases, relacionamentos, regras de negócio e medidas para análises consistentes e escaláveis.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>Automação de relatórios</h3>
+                    <p>Redução de tarefas manuais com rotinas automatizadas, padronização de entregas e atualização recorrente.</p>
+                </article>
+            </div>
+        </section>
+
         <section class="portfolio" id="portfolio">
             <div class="linha reveal">
                 <div></div>
@@ -618,66 +685,255 @@
             <h2 class="reveal">Conheça mais sobre <br> meus trabalhos</h2>
             <div class="cardprojetos">
                 <div class="dashboard">
-                    <img class ="img2"src="./Imagens/591-5918439_static-screen-png-picture-library-macbook-pro-black.png"  padding="100px" width="1120" height="600" >
-                <iframe class="teste" title="Dashboard venda" width="840" height="480.25" src="https://app.powerbi.com/view?r=eyJrIjoiYTczMzNlMjUtYjk5ZC00Yzg3LTg4OTMtNWU5ZDM1NTA1Y2ZkIiwidCI6IjYyZTk0MjAwLTUzNzAtNGEyMS1hYjNjLWNkYmRjZmY5YmI4YiJ9" frameborder="0" allowFullScreen="true"></iframe>
+                <iframe class="teste" title="Dashboard de navegação" src="https://app.powerbi.com/view?r=eyJrIjoiODIyMzQ4MjMtZDdmNC00NmE4LWFlYWYtY2Q4YzEzN2Q3YzRmIiwidCI6IjYyZTk0MjAwLTUzNzAtNGEyMS1hYjNjLWNkYmRjZmY5YmI4YiJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
                 <div class="slider">
                     <div class="slide-track">
                         <div class="slide">
-                            <img src="./Imagens/Comercial.png" alt="">
+                            <img src="./Imagens/Comercial.png" alt="Dashboard comercial">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Vendedor (5).png" alt="">
+                            <img src="./Imagens/Vendedor (5).png" alt="Dashboard de vendedor">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Comercial dark.png" alt="">
+                            <img src="./Imagens/Comercial dark.png" alt="Dashboard comercial no tema escuro">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Vendedor dark.png" alt="">
+                            <img src="./Imagens/Vendedor dark.png" alt="Dashboard de vendedor no tema escuro">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Bancodhrs.png" alt="">
+                            <img src="./Imagens/Bancodhrs.png" alt="Dashboard de banco de horas">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Infração.png" alt="">
+                            <img src="./Imagens/Infração.png" alt="Dashboard de infrações">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/homedark.png" alt="">
+                            <img src="./Imagens/homedark.png" alt="Tela inicial em tema escuro">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/inf.dark.png" alt="">
+                            <img src="./Imagens/inf.dark.png" alt="Dashboard de infrações em tema escuro">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Comercial.png" alt="">
+                            <img src="./Imagens/dashboard-095752.png" alt="Dashboard Google Review The Black Burguer">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Vendedor (5).png" alt="">
+                            <img src="./Imagens/dashboard-095805.png" alt="Dashboard de vendas N Fashion capa">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Comercial dark.png" alt="">
+                            <img src="./Imagens/dashboard-095816.png" alt="Dashboard de vendas N Fashion gerencial">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Vendedor dark.png" alt="">
+                            <img src="./Imagens/dashboard-095826.png" alt="Dashboard de vendas N Fashion clientes">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Bancodhrs.png" alt="">
+                            <img src="./Imagens/dashboard-095836.png" alt="Dashboard de vendas N Fashion produtos">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/Infração.png" alt="">
+                            <img src="./Imagens/dashboard-095714.png" alt="Dashboard de forecasting">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/homedark.png" alt="">
+                            <img src="./Imagens/dashboard-095615.png" alt="Dashboard financeiro DRE">
                         </div>
                         <div class="slide">
-                            <img src="./Imagens/inf.dark.png" alt="">
+                            <img src="./Imagens/dashboard-094311.png" alt="Dashboard financeiro Resende BI">
                         </div>
-
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094259.png" alt="Dashboard acidentes de trânsito pedestres">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094245.png" alt="Dashboard acidentes ao longo do tempo">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094222.png" alt="Dashboard acidentes por município e rodovia">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094235.png" alt="Dashboard acidentes de trânsito no Brasil">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093958.png" alt="Dashboard vidas perdidas no trânsito">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094018.png" alt="Dashboard Grupo NC executiva">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094030.png" alt="Dashboard performance macro">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094041.png" alt="Dashboard performance ao longo do tempo">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094055.png" alt="Dashboard eficiência operacional">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094111.png" alt="Dashboard comercial Grupo NC">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094130.png" alt="Dashboard contribuição por produto">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094144.png" alt="Dashboard vendas geográficas">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093852.png" alt="Dashboard desempenho logístico">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093925.png" alt="Dashboard avaliações de clientes">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093934.png" alt="Dashboard comentários e avaliações">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/Comercial.png" alt="Dashboard comercial">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/Vendedor (5).png" alt="Dashboard de vendedor">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/Comercial dark.png" alt="Dashboard comercial no tema escuro">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/Vendedor dark.png" alt="Dashboard de vendedor no tema escuro">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/Bancodhrs.png" alt="Dashboard de banco de horas">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/Infração.png" alt="Dashboard de infrações">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/homedark.png" alt="Tela inicial em tema escuro">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/inf.dark.png" alt="Dashboard de infrações em tema escuro">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-095752.png" alt="Dashboard Google Review The Black Burguer">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-095805.png" alt="Dashboard de vendas N Fashion capa">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-095816.png" alt="Dashboard de vendas N Fashion gerencial">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-095826.png" alt="Dashboard de vendas N Fashion clientes">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-095836.png" alt="Dashboard de vendas N Fashion produtos">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-095714.png" alt="Dashboard de forecasting">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-095615.png" alt="Dashboard financeiro DRE">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094311.png" alt="Dashboard financeiro Resende BI">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094259.png" alt="Dashboard acidentes de trânsito pedestres">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094245.png" alt="Dashboard acidentes ao longo do tempo">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094222.png" alt="Dashboard acidentes por município e rodovia">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094235.png" alt="Dashboard acidentes de trânsito no Brasil">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093958.png" alt="Dashboard vidas perdidas no trânsito">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094018.png" alt="Dashboard Grupo NC executiva">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094030.png" alt="Dashboard performance macro">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094041.png" alt="Dashboard performance ao longo do tempo">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094055.png" alt="Dashboard eficiência operacional">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094111.png" alt="Dashboard comercial Grupo NC">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094130.png" alt="Dashboard contribuição por produto">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-094144.png" alt="Dashboard vendas geográficas">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093852.png" alt="Dashboard desempenho logístico">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093925.png" alt="Dashboard avaliações de clientes">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dashboard-093934.png" alt="Dashboard comentários e avaliações">
+                        </div>
                     </div>
 
                 </div>
-                    
+                <div class="projectHighlights reveal">
+                    <article class="project-card">
+                        <span>Power BI</span>
+                        <h3>Dashboards executivos</h3>
+                        <p>Indicadores comerciais, acompanhamento de vendedores e visão gerencial com filtros e leitura objetiva.</p>
+                    </article>
+                    <article class="project-card">
+                        <span>SQL + Dados</span>
+                        <h3>Modelagem e tratamento</h3>
+                        <p>Organização de bases, análise de qualidade dos dados e preparação para relatórios confiáveis.</p>
+                    </article>
+                    <article class="project-card">
+                        <span>Storytelling</span>
+                        <h3>Insights acionáveis</h3>
+                        <p>Relatórios pensados para facilitar decisões, destacar oportunidades e acompanhar resultados.</p>
+                    </article>
+                </div>
+            </div>
 
 
         </section>
+
+        <section class="cases" id="cases">
+            <div class="linha reveal">
+                <div></div>
+                <h6>Estudos de caso</h6>
+            </div>
+            <div class="section-heading reveal">
+                <h2>Problemas que transformo em solução</h2>
+                <p>Alguns exemplos de entregas que conectam análise, operação e estratégia para gerar clareza na tomada de decisão.</p>
+            </div>
+            <div class="case-grid reveal">
+                <article>
+                    <span>Comercial</span>
+                    <h3>Gestão de vendas e performance</h3>
+                    <p><strong>Problema:</strong> indicadores espalhados entre planilhas e baixa visibilidade de metas, vendedores e produtos.</p>
+                    <p><strong>Solução:</strong> dashboard com receita, ticket médio, ranking, forecasting e leitura por período.</p>
+                    <p><strong>Resultado:</strong> acompanhamento gerencial mais rápido e foco nas alavancas de crescimento.</p>
+                </article>
+                <article>
+                    <span>Financeiro</span>
+                    <h3>DRE e eficiência financeira</h3>
+                    <p><strong>Problema:</strong> dificuldade para analisar margem, despesas, lucro e variações por mês.</p>
+                    <p><strong>Solução:</strong> modelo financeiro com KPIs, comparativos, evolução histórica e visão executiva.</p>
+                    <p><strong>Resultado:</strong> leitura mais clara da saúde financeira e suporte para decisões de gestão.</p>
+                </article>
+                <article>
+                    <span>Operações</span>
+                    <h3>Logística, atendimento e qualidade</h3>
+                    <p><strong>Problema:</strong> gargalos operacionais, atraso, avaliação de clientes e causas de perda pouco visíveis.</p>
+                    <p><strong>Solução:</strong> painéis de diagnóstico com causas, status, regiões, transportadoras e feedbacks.</p>
+                    <p><strong>Resultado:</strong> priorização de ações e identificação de pontos críticos de melhoria.</p>
+                </article>
+            </div>
+        </section>
+
         <section class="skills" id="skills">
             <div class="linha reveal">
                 <div></div>
@@ -686,28 +942,32 @@
 
             <div class="titulo reveal">
 
-                <h2>Conhecimentos</h2>
+                <h2>Competências em BI</h2>
+                <p class="skill-intro">Atuação senior conectando estratégia, tecnologia e gestão: do entendimento do problema à entrega de indicadores confiáveis para decisão executiva.</p>
             </div>
 
 
             <div class="cardProgramas" id="skills-cards">
                 <div class="card">
-                    <span>Python</span>
+                    <span>Estratégia BI</span>
                     <div>
-                        <img src="./Imagens/Python-logo-notext 1.png">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <p>Diagnóstico de necessidades, definição de KPIs e tradução de objetivos em indicadores acionáveis.</p>
                     </div>
                 </div>
 
                 <div class="card ">
                     <span>Power BI</span>
                     <div>
-                        <img src="./Imagens/PBI-Logo (1).png">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <p>Dashboards executivos, DAX, storytelling visual e acompanhamento de performance por área.</p>
                     </div>
                 </div>
                 <div class="card ">
-                    <span>SQL Sever</span>
+                    <span>Modelagem</span>
                     <div>
-                        <img src="./Imagens/sql-server-icon 1.png">
+                        <i class="fa-solid fa-database"></i>
+                        <p>Modelos analíticos, relacionamento entre tabelas, qualidade de dados e visão única do negócio.</p>
                     </div>
                 </div>
                
@@ -715,28 +975,54 @@
             </div>
             <div class="card2Programas">
                 <div class="card ">
-                    <span>JavaScript</span>
+                    <span>SQL & ETL</span>
                     <div>
-                        <img src="./Imagens/Frame 1.png">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <p>Consultas, tratamento, integração de bases e preparação de dados para relatórios confiáveis.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <span>CSS</span>
+                    <span>Automação</span>
                     <div>
-                        <img src="./Imagens/Frame 2 (1).png">
+                        <i class="fa-solid fa-gears"></i>
+                        <p>Rotinas para reduzir trabalho manual, padronizar entregas e acelerar análises recorrentes.</p>
                     </div>
                 </div>
                 <div class="card  ">
-                    <span>HTML</span>
+                    <span>Governança</span>
                     <div>
-                        <img src="./Imagens/html5-line.png">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p>Regras, documentação, consistência dos indicadores e confiança na tomada de decisão.</p>
                     </div>
                 </div>
                
             </div>
 
+            <div class="tools-strip reveal">
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>Power Query</span>
+                <span>SQL</span>
+                <span>Python</span>
+                <span>Excel</span>
+                <span>ETL</span>
+                <span>Automação</span>
+                <span>Governança</span>
+            </div>
 
 
+
+        </section>
+        <section class="final-cta">
+            <div class="cta-box reveal">
+                <span>Vamos conversar?</span>
+                <h2>Vamos transformar seus dados em decisões?</h2>
+                <p>Se você precisa organizar indicadores, automatizar relatórios ou criar dashboards executivos, posso ajudar a estruturar uma solução clara e aplicável ao negócio.</p>
+                <div>
+                    <a class="primary-action" href="https://api.whatsapp.com/send?phone=5531999064252" target="_blank">Chamar no WhatsApp</a>
+                    <a class="secondary-action" href="https://www.linkedin.com/in/daniel-resend/" target="_blank">Conectar no LinkedIn</a>
+                </div>
+            </div>
         </section>
         <section class="contact" id="contact">
             <div class="linha reveal">
@@ -747,33 +1033,33 @@
             <div class="socialMidia reveal">
                 <div class="content">
                     <div class="iconMedia">
-                        <lin class="fa-brands fa-linkedin"></lin>
+                        <i class="fa-brands fa-linkedin"></i>
                     </div>
 
                     <div class="text">
-                        <a href="https://www.linkedin.com/in/daniel-resend/" target="_blank"><img src="./Imagens/seta.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/daniel-resend/" target="_blank" aria-label="Abrir LinkedIn"><img src="./Imagens/seta.png" alt=""></a>
                         <h6>Linkedin</h6>
                         <a href="https://www.linkedin.com/in/daniel-resend/" target="_blank">Daniel Resende </a>
                     </div>
                 </div>
                 <div class="content">
                     <div class="iconMedia">
-                        <zap class="fa-brands fa-whatsapp"></zap>
+                        <i class="fa-brands fa-whatsapp"></i>
                     </div>
                     <div class="text">
-                        <a href="https://api.whatsapp.com/send?phone=5519986105192" target="_blank"><img src="./Imagens/seta.png" alt=""></a>
+                        <a href="https://api.whatsapp.com/send?phone=5531999064252" target="_blank" aria-label="Abrir WhatsApp"><img src="./Imagens/seta.png" alt=""></a>
                         <h6>Whatsapp</h6>
-                        <a href="https://api.whatsapp.com/send?phone=5519986105192" target="_blank">31 999064252</a>
+                        <a href="https://api.whatsapp.com/send?phone=5531999064252" target="_blank">31 999064252</a>
 
                     </div>
                 </div>
                 <div class="content">
 
                     <div class="iconMedia">
-                        <email class="fa-regular fa-envelope"></email>
+                        <i class="fa-regular fa-envelope"></i>
                     </div>
                     <div class="text">
-                        <a href="mailto:danielresendk@gmail.com" target="_blank"><img src="./Imagens/seta.png" alt=""></a>
+                        <a href="mailto:danielresendk@gmail.com" target="_blank" aria-label="Enviar e-mail"><img src="./Imagens/seta.png" alt=""></a>
                         <h6>E-mail</h6>
                         <a href="mailto:danielresendk@gmail.com" target="_blank">danielresendk@gmail.com</a>
                     </div>
@@ -783,15 +1069,13 @@
 
         </section>
         <footer class="footer">
-            <p>© 2022 - Developed by <a href="#">Daniel Resende </a></p>
-            <div>
-                <p>Design by <a href="https://www.behance.net/anaester" target="_blank">Ana Ester</a></p>
-            </div>
-
-
+            <p>© 2026 - Desenvolvido por <a href="#">Daniel Resende </a></p>
         </footer>
 
     </main>
+    <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5531999064252" target="_blank" aria-label="Chamar Daniel Resende no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
     <script src="./menuHover.js"></script>
 
 </body>

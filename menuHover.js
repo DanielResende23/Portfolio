@@ -1,56 +1,51 @@
-var marker = document.querySelector('#marker');
-var item = document.querySelectorAll('nav a');
+const marker = document.querySelector('#marker');
+const menuToggle = document.querySelector('.toggle');
+const navigation = document.querySelector('.navigation');
+const navigationItems = document.querySelectorAll('.navigation a');
 
-function indicator(e) {
-    marker.style.left = e.offsetLeft + "px";
-    marker.style.width = e.offsetWidth + "px";
+function indicator(element) {
+    if (!marker || !element) return;
+
+    marker.style.left = `${element.offsetLeft}px`;
+    marker.style.width = `${element.offsetWidth}px`;
 }
 
-item.forEach(link => {
-    link.addEventListener('click', (e) => {
-        indicator(e.target)
-    })
-})
-
-window.addEventListener('scroll', reveal)
-
-function reveal() {
-    let reveals = document.querySelectorAll('.reveal')
-
-    for (let i = 0; i < reveals.length; i++) {
-        let windowHeigth = window.innerHeight;
-        let revealTop = reveals[i].getBoundingClientRect().top;
-        let revealPoint = 50
-
-        if (revealTop < windowHeigth - revealPoint) {
-            reveals[i].classList.add("active")
-        }
-
-
-    }
+function closeMenu() {
+    menuToggle?.classList.remove('active');
+    navigation?.classList.remove('active');
+    menuToggle?.setAttribute('aria-expanded', 'false');
 }
 
 function toggleMenu() {
-    let menuToggle = document.querySelector('.toggle')
-    let navigation = document.querySelector('.navigation')
-    menuToggle.classList.toggle('active')
-    navigation.classList.toggle('active')
-
-    const navigationItems = document.querySelectorAll(".navigation a")
-
-    navigationItems.forEach((navigationItems) => {
-        navigationItems.addEventListener("click", () => {
-            menuToggle.classList.remove('active')
-            navigation.classList.remove('active')
-        })
-    })
+    const isOpen = navigation?.classList.toggle('active');
+    menuToggle?.classList.toggle('active', Boolean(isOpen));
+    menuToggle?.setAttribute('aria-expanded', String(Boolean(isOpen)));
 }
 
-const navigationItems = document.querySelectorAll(".navigation a")
+navigationItems.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        indicator(event.currentTarget);
+        closeMenu();
+    });
+});
 
-navigationItems.forEach((navigationItems) => {
-    navigationItems.addEventListener("click", () => {
-        menuToggle.classList.remove('active')
-        navigation.classList.remove('active')
-    })
-})
+window.addEventListener('resize', closeMenu);
+window.addEventListener('scroll', reveal);
+window.addEventListener('load', () => {
+    indicator(navigationItems[0]);
+    reveal();
+});
+
+function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
+    const revealPoint = 50;
+
+    reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add('active');
+        }
+    });
+}
