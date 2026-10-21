@@ -1,35 +1,31 @@
 <h1 align="center">
-  💻<br>Meu Portfólio
+  Daniel Resende | Portfólio
 </h1>
 
 <h4 align="center">
-  Portfólio criado com o intuito de mostrar meus projetos ao decorrer da minha carreira.
+  Desenvolvedor de BI Sênior · Analytics Engineer · Dados e IA no ecossistema Microsoft
 </h4>
 
   <img alt="" title="" src="./Imagens/Group 30.jpg/">
 
 
-<h4 align="center"><a href="https://danielresende23.github.io/Portfolio/">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://danielresende23.github.io/Portfolio/">Clique para visitar o portfólio</a></h4>
 
 ## 📚 Seções
-O site é composto por 5 seções diferentes:
 
-- **Inicio:** Nele temos uma breve apresentação;
-- **Sobre mim:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
-- **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
-- **Skills:**  Apresenta meus conhecimentos em algumas linguagens como o foco no front-end;
-- **Contatos:** Nessa senção são os meus contatos;
+- **Início:** apresentação e foco de atuação;
+- **Sobre mim:** modelagem, engenharia de dados, BI como código e IA aplicada;
+- **Serviços:** modelos semânticos, engenharia de dados, Power BI corporativo, IA e automação;
+- **Arquitetura:** como construo uma solução de dados (Fontes → Bronze → Silver → Gold → modelo semântico → consumo);
+- **Projetos:** relatórios publicados e destaques;
+- **Lab:** projetos de engenharia de dados com código aberto (Fabric, Databricks, modelo AI-ready);
+- **Cases:** problema, solução e resultado;
+- **Skills e Contato.**
 
----
+## 🧰 Stack
 
-## 💼 Tecnologias utilizadas
-Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+Microsoft Fabric · Power BI · DAX · Power Query · SQL · Python · PySpark · Databricks · Azure · Copilot Studio · Power Automate · Git · PBIP / TMDL
 
-- HTML;
-- CSS;
-- JavaScript;
+## 💻 Site
 
-
-
-
-
+HTML, CSS e JavaScript, publicado no GitHub Pages.

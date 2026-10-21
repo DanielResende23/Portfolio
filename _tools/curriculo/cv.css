@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=block");
+
+@page { size: A4; margin: 14mm 15mm; }
+
+:root {
+  --ink: #14202b;
+  --muted: #4a5a66;
+  --accent: #0f8f86;
+  --line: #d7e1e5;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  color: var(--ink);
+  font: 9.6pt/1.45 Poppins, "Segoe UI", sans-serif;
+}
+
+header { border-bottom: 2px solid var(--accent); padding-bottom: 9px; margin-bottom: 10px; }
+h1 { font-size: 23pt; font-weight: 600; letter-spacing: -0.3px; line-height: 1.1; }
+.role { color: var(--accent); font-size: 12pt; font-weight: 500; margin-top: 2px; }
+.contact { color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 14px; font-size: 8.6pt; margin-top: 6px; }
+
+section { margin-top: 11px; }
+h2 {
+  color: var(--accent);
+  font-size: 9.6pt;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+p + p { margin-top: 4px; }
+.stack { color: var(--muted); }
+
+article { break-inside: avoid; margin-bottom: 9px; }
+article.compact { margin-bottom: 6px; }
+.head { align-items: baseline; display: flex; gap: 12px; justify-content: space-between; }
+h3 { font-size: 10.2pt; font-weight: 600; }
+.date { color: var(--muted); font-size: 8.6pt; white-space: nowrap; }
+.org { color: var(--muted); font-size: 8.8pt; margin-bottom: 3px; }
+
+ul { margin: 3px 0 0 14px; }
+li { margin-bottom: 2px; }
+li::marker { color: var(--accent); }
+ul.tight li { margin-bottom: 1px; }
+
+.skills { display: grid; gap: 3px 12px; grid-template-columns: 138px 1fr; }
+.skills dt { font-weight: 600; }
+.skills dd { color: var(--ink); }
+
+.two-col { display: grid; gap: 22px; grid-template-columns: 1fr 1fr; }
+.two-col h2:not(:first-child) { margin-top: 10px; }
