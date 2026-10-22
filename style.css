@@ -3522,9 +3522,184 @@ header .navigation {
     color: #06111A;
 }
 
+.feature-grid.three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 0;
+}
+
+/* Espaçamento entre seções: menos ar entre um bloco e outro */
+.about,
+.portfolio,
+.skills,
+.contact,
+.services,
+.cases,
+.final-cta {
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+/* Âncoras do menu não ficam escondidas atrás do header fixo */
+main > section {
+    scroll-margin-top: 56px;
+}
+
+/* Cases de dashboards: case principal aberto + cards no estilo "FIG." */
+.portfolio.dashboards {
+    padding-top: 24px;
+}
+
+.case-detail {
+    background: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    margin: 0 auto 56px;
+    max-width: 1040px;
+    padding: 30px;
+}
+
+.case-detail-head h3 {
+    color: var(--text);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.case-detail-head p {
+    color: var(--muted);
+    font-size: 15.5px;
+    line-height: 1.7;
+    max-width: 820px;
+}
+
+.case-detail-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 24px 0 18px;
+}
+
+.case-detail-grid article {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.case-detail-grid h4 {
+    align-items: center;
+    color: var(--warm);
+    display: flex;
+    font-size: 16px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.case-detail-grid h4 i {
+    color: var(--accent-strong);
+}
+
+.case-detail-grid p {
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.7;
+}
+
+.case-cards {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 1040px;
+}
+
+.case-card {
+    background: #0c1a17;
+    border: 1px solid rgba(23, 199, 184, 0.18);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.case-card:hover {
+    border-color: rgba(23, 199, 184, 0.5);
+    transform: translateY(-4px);
+}
+
+.case-card-img {
+    aspect-ratio: 16 / 9;
+    background: #0b1620;
+    display: block;
+    overflow: hidden;
+}
+
+.case-card-img img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+}
+
+.case-card-body {
+    padding: 22px 24px 24px;
+}
+
+.case-card-fig {
+    color: #8fb3a8;
+    display: block;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 12.5px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.case-card-body h3 {
+    color: var(--text);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.case-card-body p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.case-card-link {
+    align-items: center;
+    color: var(--accent-strong);
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 600;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.case-card-link i {
+    font-size: 12px;
+}
+
+.case-card-link:hover {
+    color: var(--warm);
+}
+
+@media (max-width: 1100px) {
+    .feature-grid.three {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 900px) {
     .feature-grid,
-    .recognition-grid {
+    .feature-grid.three,
+    .recognition-grid,
+    .case-detail-grid,
+    .case-cards {
         grid-template-columns: 1fr;
+    }
+
+    .case-detail {
+        padding: 22px;
     }
 }
