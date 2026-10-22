@@ -15,6 +15,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="alternate" hreflang="pt-BR" href="https://danielresende23.github.io/Portfolio/">
     <link rel="alternate" hreflang="en" href="https://danielresende23.github.io/Portfolio/en.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://danielresende23.github.io/Portfolio/en.html">
+    <meta property="og:title" content="Daniel Resende | Analytics Engineer">
+    <meta property="og:description" content="From raw data to dashboard: data modeling, Microsoft Fabric, Power BI, Databricks and AI on the Microsoft stack.">
+    <meta property="og:image" content="https://danielresende23.github.io/Portfolio/Imagens/og-daniel-resende-en.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
 
 </head>
 
@@ -730,11 +739,76 @@
                 <h6>Portfolio</h6>
 
             </div>
-            <h2 class="reveal">Deliverables built <br> on solid models</h2>
+            <h2 class="reveal">End-to-end projects, <br> from data to dashboard</h2>
             <div class="cardprojetos">
+                <div class="feature-grid reveal">
+                    <article class="feature-card">
+                        <a class="feature-img" href="https://github.com/danielresende23/fabric-lakehouse-medallion" target="_blank" rel="noopener">
+                            <img src="./Imagens/projeto-fabric-olist.jpg" alt="Olist e-commerce loss report on Microsoft Fabric" loading="lazy">
+                        </a>
+                        <div class="feature-body">
+                            <span class="feature-tag">Microsoft Fabric · Data engineering</span>
+                            <h3>Medallion Lakehouse on Fabric</h3>
+                            <p><strong>Problem:</strong> how much e-commerce revenue is lost to cancellations and late deliveries, and where it is concentrated.</p>
+                            <p><strong>Solution:</strong> Data Pipeline and PySpark notebooks across Bronze, Silver and Gold with a data quality quarantine, a star schema and a Direct Lake semantic model versioned in TMDL.</p>
+                            <p><strong>Result:</strong> R$ 108K in lost revenue and 6.8% of orders delivered late, concentrated in the North and Northeast of Brazil.</p>
+                            <ul class="feature-stack"><li>Fabric</li><li>PySpark</li><li>Direct Lake</li><li>TMDL</li><li>Git</li></ul>
+                            <div class="feature-links">
+                                <a href="https://github.com/danielresende23/fabric-lakehouse-medallion" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-img" href="https://github.com/danielresende23/databricks-delta-unity-catalog" target="_blank" rel="noopener">
+                            <img src="./Imagens/projeto-databricks-tlc.jpg" alt="Incremental Medallion pipeline on Databricks" loading="lazy">
+                        </a>
+                        <div class="feature-body">
+                            <span class="feature-tag">Databricks · Data engineering</span>
+                            <h3>Delta Lake & Unity Catalog</h3>
+                            <p><strong>Problem:</strong> process millions of New York City taxi trips incrementally, with guaranteed quality and governance.</p>
+                            <p><strong>Solution:</strong> Lakeflow Declarative Pipelines with Auto Loader, expectations with quarantine, SCD2 and a star schema, governed in Unity Catalog and deployed with Asset Bundles and GitHub Actions.</p>
+                            <p><strong>Result:</strong> a fact table with 15 million trips and a quality gate that blocks the job when data fails.</p>
+                            <ul class="feature-stack"><li>Databricks</li><li>Delta Lake</li><li>PySpark</li><li>Unity Catalog</li><li>CI/CD</li></ul>
+                            <div class="feature-links">
+                                <a href="https://github.com/danielresende23/databricks-delta-unity-catalog" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-img" href="https://app.powerbi.com/view?r=eyJrIjoiNWI2MzFlMjgtOGE3Mi00NTQxLWJlYjEtYmMxYWZiYmU1ZWQ4IiwidCI6IjYyZTk0MjAwLTUzNzAtNGEyMS1hYjNjLWNkYmRjZmY5YmI4YiJ9" target="_blank" rel="noopener">
+                            <img src="./Imagens/vertex-visao-macro.png" alt="Vertex Tennis dashboard, overview" loading="lazy">
+                        </a>
+                        <div class="feature-body">
+                            <span class="feature-tag">Power BI · Modeling & storytelling</span>
+                            <h3>Sales and Operations Performance</h3>
+                            <p><strong>Problem:</strong> a tennis gear brand's sales picture scattered across categories, segments, regions and periods.</p>
+                            <p><strong>Solution:</strong> a dimensional model with dynamic DAX measures, period comparisons, a 12-month forecast and geographic analysis.</p>
+                            <p><strong>Result:</strong> an executive read in four pages: KPI cover, overview, geography and trends over time.</p>
+                            <ul class="feature-stack"><li>Power BI</li><li>DAX</li><li>Modeling</li><li>Storytelling</li></ul>
+                            <div class="feature-links">
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNWI2MzFlMjgtOGE3Mi00NTQxLWJlYjEtYmMxYWZiYmU1ZWQ4IiwidCI6IjYyZTk0MjAwLTUzNzAtNGEyMS1hYjNjLWNkYmRjZmY5YmI4YiJ9" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Open dashboard</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- When a project ships: change "In progress" to "Published", add an image and the repository link. -->
+                    <article class="feature-card soon">
+                        <div class="feature-img feature-placeholder"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <div class="feature-body">
+                            <span class="feature-tag">Power BI + AI · In progress</span>
+                            <h3>AI-ready semantic model</h3>
+                            <p><strong>Scope:</strong> a PBIP/TMDL model with descriptions, synonyms and Copilot instructions, an agent that answers questions about losses and an automated alert with the likely cause and the recommended action.</p>
+                            <ul class="feature-stack"><li>Copilot</li><li>Data Agent</li><li>Power Automate</li><li>TMDL</li></ul>
+                        </div>
+                    </article>
+                </div>
+
+                <h3 class="gallery-title reveal">Explore the live dashboard</h3>
                 <div class="dashboard">
                 <iframe class="teste" title="Sales and Operations Performance Dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiNWI2MzFlMjgtOGE3Mi00NTQxLWJlYjEtYmMxYWZiYmU1ZWQ4IiwidCI6IjYyZTk0MjAwLTUzNzAtNGEyMS1hYjNjLWNkYmRjZmY5YmI4YiJ9" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
+                <a class="dashboard-open" href="https://app.powerbi.com/view?r=eyJrIjoiNWI2MzFlMjgtOGE3Mi00NTQxLWJlYjEtYmMxYWZiYmU1ZWQ4IiwidCI6IjYyZTk0MjAwLTUzNzAtNGEyMS1hYjNjLWNkYmRjZmY5YmI4YiJ9" target="_blank" rel="noopener">Open full screen <i class="fa-solid fa-up-right-from-square"></i></a>
+
+                <h3 class="gallery-title reveal">Dashboard gallery</h3>
                 <div class="slider">
                     <div class="slide-track">
                         <div class="slide">
@@ -950,61 +1024,9 @@
                     </div>
 
                 </div>
-                <div class="projectHighlights reveal">
-                    <article class="project-card">
-                        <span>Modeling</span>
-                        <h3>Semantic models</h3>
-                        <p>Star schema, DAX measures and business rules that keep every report's numbers consistent.</p>
-                    </article>
-                    <article class="project-card">
-                        <span>Engineering</span>
-                        <h3>Integration & performance</h3>
-                        <p>Multiple sources, incremental refresh and tuning for models that grow without slowing down.</p>
-                    </article>
-                    <article class="project-card">
-                        <span>Consumption layer</span>
-                        <h3>Reports & AI</h3>
-                        <p>Executive reports with storytelling and models ready for natural-language questions in Copilot.</p>
-                    </article>
-                </div>
             </div>
 
 
-        </section>
-
-        <section class="cases lab" id="lab">
-            <div class="linha reveal">
-                <div></div>
-                <h6>Lab</h6>
-            </div>
-            <div class="section-heading reveal">
-                <h2>Data engineering projects</h2>
-                <p>End-to-end, open-source projects, from raw data to the semantic model and the AI layer.</p>
-            </div>
-            <div class="case-grid reveal">
-                <!-- When a project ships: change "In progress" to "Published" and point the href to its repository. -->
-                <article>
-                    <span>Microsoft Fabric · Published</span>
-                    <h3>Medallion Lakehouse on Fabric</h3>
-                    <p><strong>Scope:</strong> e-commerce losses (Olist dataset): Data Pipeline, PySpark notebooks across Bronze, Silver and Gold, and a Direct Lake semantic model versioned in TMDL.</p>
-                    <p><strong>Highlights:</strong> data quality with quarantine, star schema, AI-ready model for Copilot, Git integration and deployment pipelines.</p>
-                    <a class="lab-link" href="https://github.com/danielresende23/fabric-lakehouse-medallion" target="_blank" rel="noopener">View on GitHub <i class="fa-brands fa-github"></i></a>
-                </article>
-                <article>
-                    <span>Databricks · Published</span>
-                    <h3>Delta Lake & Unity Catalog</h3>
-                    <p><strong>Scope:</strong> New York City taxi trips (NYC TLC), with an incremental Lakeflow Declarative Pipeline: Auto Loader in Bronze, expectations with quarantine and SCD2 in Silver, a star schema in Gold and publishing to Power BI.</p>
-                    <p><strong>Highlights:</strong> PySpark and SQL, a quality gate that blocks the job, Unity Catalog governance (grants, tags, comments and lineage) and dev/prd Asset Bundles with GitHub Actions.</p>
-                    <a class="lab-link" href="https://github.com/danielresende23/databricks-delta-unity-catalog" target="_blank" rel="noopener">View on GitHub <i class="fa-brands fa-github"></i></a>
-                </article>
-                <article>
-                    <span>Power BI + IA · In progress</span>
-                    <h3>AI-ready semantic model</h3>
-                    <p><strong>Scope:</strong> PBIP/TMDL model versioned in Git, with descriptions, synonyms and Copilot instructions.</p>
-                    <p><strong>Highlights:</strong> Best Practice Analyzer rules, a data agent and natural-language Q&A.</p>
-                    <a class="lab-link" href="https://github.com/danielresende23" target="_blank">View on GitHub <i class="fa-brands fa-github"></i></a>
-                </article>
-            </div>
         </section>
 
         <section class="cases" id="cases">
@@ -1019,10 +1041,11 @@
             <div class="case-grid reveal">
                 <article>
                     <span>Sales</span>
-                    <h3>Sales and performance management</h3>
-                    <p><strong>Problem:</strong> KPIs scattered across spreadsheets and little visibility into targets, sales reps and products.</p>
-                    <p><strong>Solution:</strong> sources integrated into a single dimensional model, with revenue, average ticket, ranking and forecasting measures.</p>
-                    <p><strong>Result:</strong> faster management follow-up and focus on growth levers.</p>
+                    <h3>Sales, commissions and performance</h3>
+                    <p class="case-metric">+150%</p>
+                    <p><strong>Problem:</strong> KPIs scattered across spreadsheets, commissions calculated by hand and little visibility into targets and sales reps.</p>
+                    <p><strong>Solution:</strong> a single dimensional model for sales and services, an automated commission dashboard and gamification in the sales BI.</p>
+                    <p><strong>Result:</strong> +150% in sales team engagement and performance and 20% less time calculating commissions.</p>
                 </article>
                 <article>
                     <span>Finance</span>
@@ -1033,11 +1056,30 @@
                 </article>
                 <article>
                     <span>Operations</span>
-                    <h3>Logistics, customer service and quality</h3>
-                    <p><strong>Problem:</strong> operational bottlenecks, delays, customer ratings and loss causes with little visibility.</p>
-                    <p><strong>Solution:</strong> operational and customer service data integrated into a diagnostic model by cause, region and carrier, with automated alerts.</p>
-                    <p><strong>Result:</strong> prioritized actions and clear critical improvement points.</p>
+                    <h3>Logistics, stock and inventory</h3>
+                    <p class="case-metric">+35 h/month</p>
+                    <p><strong>Problem:</strong> slow inventory counts, low trust in stock levels and barely visible losses from slow-moving products.</p>
+                    <p><strong>Solution:</strong> a structured database, stock dashboards in Power BI and Power Apps apps for inventory counts.</p>
+                    <p><strong>Result:</strong> 35+ hours saved per month, faster and more reliable inventory and fewer losses.</p>
                 </article>
+            </div>
+        </section>
+
+        <section class="services recognition" id="recognition">
+            <div class="linha reveal">
+                <div></div>
+                <h6>Recognition</h6>
+            </div>
+            <div class="recognition-grid reveal">
+                <article class="award">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Two-time winner of the Xperiun Power BI challenge</h3>
+                    <p>Two wins in the Xperiun dashboard challenge. The first edition brought together 92+ data analysts around a road accidents case.</p>
+                </article>
+                <blockquote class="testimonial">
+                    <p>"Daniel has a remarkable ability to analyze data, combined with a natural talent for design and storytelling." <em>(translated)</em></p>
+                    <footer><strong>Leonardo Karpinski</strong><span>Founder of Xperiun · Microsoft MVP</span></footer>
+                </blockquote>
             </div>
         </section>
 
@@ -1130,7 +1172,7 @@
                 <h2>Need to model, build or evolve your data platform?</h2>
                 <p>I work on remote projects in data modeling, data engineering, enterprise Power BI and AI on the Microsoft stack, alongside business and technology teams.</p>
                 <div>
-                    <a class="primary-action" href="https://api.whatsapp.com/send?phone=5531999074252" target="_blank">Message on WhatsApp</a>
+                    <a class="primary-action" href="mailto:danielresendk@gmail.com">Email me</a>
                     <a class="secondary-action" href="https://www.linkedin.com/in/daniel-resend/" target="_blank">Connect on LinkedIn</a>
                 </div>
             </div>
@@ -1184,8 +1226,8 @@
         </footer>
 
     </main>
-    <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5531999074252" target="_blank" aria-label="Message Daniel Resende on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+    <a class="whatsapp-float email-float" href="mailto:danielresendk@gmail.com" aria-label="Email Daniel Resende">
+        <i class="fa-regular fa-envelope"></i>
     </a>
     <script src="./menuHover.js"></script>
 

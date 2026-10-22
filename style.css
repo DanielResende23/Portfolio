@@ -3302,3 +3302,229 @@ header .navigation {
         transform: translateX(-50%);
     }
 }
+
+/* Projetos em destaque: casos com imagem, problema/solução/resultado e links */
+.feature-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0 auto 64px;
+}
+
+.feature-card {
+    background: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.feature-card:hover {
+    border-color: rgba(23, 199, 184, 0.45);
+    transform: translateY(-4px);
+}
+
+.feature-img {
+    aspect-ratio: 16 / 9;
+    background: #0b1620;
+    display: block;
+    overflow: hidden;
+}
+
+.feature-img img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+}
+
+.feature-placeholder {
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 138, 61, 0.16), rgba(23, 199, 184, 0.16)), #0b1620;
+    color: var(--accent-strong);
+    display: flex;
+    font-size: 56px;
+    justify-content: center;
+}
+
+.feature-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 24px 26px 26px;
+}
+
+.feature-tag {
+    color: var(--accent-strong);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.feature-card.soon .feature-tag {
+    color: var(--warm);
+}
+
+.feature-body h3 {
+    color: var(--text);
+    font-size: 21px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.feature-body p {
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.65;
+    margin-bottom: 8px;
+}
+
+.feature-body strong {
+    color: var(--warm);
+}
+
+.feature-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.feature-stack li {
+    border: 1px solid rgba(23, 199, 184, 0.3);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 4px 11px;
+}
+
+.feature-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: auto;
+    padding-top: 18px;
+}
+
+.feature-links a,
+.dashboard-open {
+    color: var(--accent-strong);
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.feature-links a:hover,
+.dashboard-open:hover {
+    color: var(--warm);
+}
+
+.gallery-title {
+    color: var(--text);
+    font-size: 22px;
+    margin: 0 0 22px;
+    text-align: center;
+}
+
+.dashboard-open {
+    display: flex;
+    justify-content: center;
+    margin: -24px auto 56px;
+    width: fit-content;
+}
+
+/* Cases: número em destaque */
+.case-grid .case-metric {
+    color: var(--accent-strong);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+/* Reconhecimento: prêmio e depoimento */
+.recognition-grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: var(--container);
+}
+
+.recognition-grid .award,
+.recognition-grid .testimonial {
+    background: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    margin: 0;
+    padding: 28px;
+}
+
+.award i {
+    color: #F2C14E;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.award h3 {
+    color: var(--text);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.award p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.testimonial {
+    border-left: 3px solid var(--warm) !important;
+}
+
+.testimonial p {
+    color: var(--text);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.testimonial footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 18px;
+}
+
+.testimonial footer strong {
+    color: var(--accent-strong);
+}
+
+.testimonial footer span {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Versão em inglês: botão flutuante de e-mail no lugar do WhatsApp */
+.whatsapp-float.email-float {
+    background: var(--accent);
+    color: #06111A;
+}
+
+@media (max-width: 900px) {
+    .feature-grid,
+    .recognition-grid {
+        grid-template-columns: 1fr;
+    }
+}

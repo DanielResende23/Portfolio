@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Imagem de prévia</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+  /* Imagem 1200x630 usada no og:image (prévia do link no LinkedIn e no WhatsApp) */
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(520px 340px at 1010px 160px, rgba(23, 199, 184, 0.22), transparent 70%),
+      radial-gradient(520px 340px at 160px 600px, rgba(255, 138, 61, 0.16), transparent 70%),
+      #06111A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: Poppins, "Segoe UI", sans-serif;
+    gap: 64px;
+    padding: 0 80px;
+    box-sizing: border-box;
+  }
+  .txt { flex: 1; }
+  .eyebrow { color: #39E5D6; font-size: 22px; letter-spacing: 4px; text-transform: uppercase; }
+  h1 { font-size: 76px; line-height: 1.05; margin: 18px 0 0; }
+  h1 span { color: #FF8A3D; display: block; }
+  p { color: #B7C4CC; font-size: 28px; line-height: 1.4; margin: 24px 0 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .chips b { border: 1px solid rgba(23, 199, 184, 0.5); border-radius: 999px; color: #d9f7f4; font-size: 20px; font-weight: 400; padding: 8px 18px; }
+  img { border: 4px solid #17C7B8; border-radius: 50%; height: 330px; object-fit: cover; width: 330px; }
+</style>
+</head>
+<body>
+  <div class="txt">
+    <div class="eyebrow">Dados &amp; IA · Microsoft</div>
+    <h1>Daniel Resende <span>Analytics Engineer</span></h1>
+    <p>Do dado bruto ao dashboard: modelagem, engenharia de dados e IA.</p>
+    <div class="chips"><b>Microsoft Fabric</b><b>Power BI</b><b>Databricks</b><b>Azure</b></div>
+  </div>
+  <img src="../Imagens/perfil-daniel.jpg" alt="">
+<script>
+  // og.html?lang=en gera a versão em inglês
+  if (new URLSearchParams(location.search).get('lang') === 'en') {
+    document.querySelector('.eyebrow').innerHTML = 'Data &amp; AI · Microsoft';
+    document.querySelector('p').textContent = 'From raw data to dashboard: data modeling, data engineering and AI.';
+  }
+</script>
+</body>
+</html>
