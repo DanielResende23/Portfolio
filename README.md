@@ -18,7 +18,7 @@
 - **Serviços:** modelos semânticos, engenharia de dados, Power BI corporativo, IA e automação;
 - **Arquitetura:** como construo uma solução de dados (Fontes → Bronze → Silver → Gold → modelo semântico → consumo);
 - **Projetos:** relatórios publicados e destaques;
-- **Lab:** projetos de engenharia de dados com código aberto (Fabric, Databricks, modelo AI-ready);
+- **Lab:** projetos com código aberto (Fabric, Databricks, modelo AI-ready, dbt, Customer Support Analytics e agente de IA com RAG);
 - **Cases:** problema, solução e resultado;
 - **Skills e Contato.**
 

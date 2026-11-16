@@ -789,6 +789,54 @@
                             </div>
                         </div>
                     </article>
+                    <article class="feature-card">
+                        <a class="feature-img" href="https://github.com/danielresende23/dbt-marketing-analytics" target="_blank" rel="noopener">
+                            <img src="./Imagens/projeto-dbt-marketing.jpg" alt="dbt project lineage, from media and CRM sources to the performance marts" loading="lazy">
+                        </a>
+                        <div class="feature-body">
+                            <span class="feature-tag">dbt + DuckDB · Data modeling</span>
+                            <h3>Multichannel marketing with dbt</h3>
+                            <p><strong>Problem:</strong> Google Ads, Meta Ads, GA4 and CRM exports that do not match, with messy UTMs, repeated rows and duplicated leads.</p>
+                            <p><strong>Solution:</strong> dbt staging, intermediate and marts with a star schema, UTM rules in seeds, 63 tests (including spend reconciled to the cent) and lineage docs.</p>
+                            <p><strong>Result:</strong> trustworthy CPL, CAC and ROAS. Platforms reported 20% more conversions than the CRM, and the deep dive showed CPL rose 45% because of the landing page, not the auction.</p>
+                            <ul class="feature-stack"><li>dbt</li><li>DuckDB</li><li>SQL</li><li>Tests</li><li>CI</li></ul>
+                            <div class="feature-links">
+                                <a href="https://github.com/danielresende23/dbt-marketing-analytics" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-img" href="https://github.com/danielresende23/cx-performance-analytics" target="_blank" rel="noopener">
+                            <img src="./Imagens/projeto-cx-performance.jpg" alt="Customer support Weekly Business Review with KPIs, volume, SLA and CSAT" loading="lazy">
+                        </a>
+                        <div class="feature-body">
+                            <span class="feature-tag">SQL + Python · Customer support performance</span>
+                            <h3>Customer Support Analytics</h3>
+                            <p><strong>Problem:</strong> support SLA collapsed and leadership needed the cause, an action plan and the capacity required for the coming weeks.</p>
+                            <p><strong>Solution:</strong> KPIs defined once in SQL, a deep dive by reason, segment and contract, a Holt-Winters forecast with backtest, a capacity plan and a code-generated weekly review.</p>
+                            <p><strong>Result:</strong> a single customer group explained practically the whole rise in contacts. A forecast with 6.7% error and an agent plan for July and August.</p>
+                            <ul class="feature-stack"><li>SQL</li><li>DuckDB</li><li>Python</li><li>Forecast</li><li>KPIs</li></ul>
+                            <div class="feature-links">
+                                <a href="https://github.com/danielresende23/cx-performance-analytics" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-img" href="https://github.com/danielresende23/kpi-rag-agent" target="_blank" rel="noopener">
+                            <img src="./Imagens/projeto-rag-agent.jpg" alt="AI agent chat answering why SLA dropped, citing its source" loading="lazy">
+                        </a>
+                        <div class="feature-body">
+                            <span class="feature-tag">Generative AI · RAG + SQL</span>
+                            <h3>KPI agent with RAG</h3>
+                            <p><strong>Problem:</strong> answers about SLA, causes and capacity were spread across the dashboard, policies and post-mortems, and a generic chatbot makes numbers up.</p>
+                            <p><strong>Solution:</strong> a function calling agent that searches the docs with embeddings and queries the KPI tables with read-only SQL, running on Gemini or OpenAI.</p>
+                            <p><strong>Result:</strong> 15 of 15 correct answers in the evaluation, the right document in every search, and "not found" when the question is out of scope.</p>
+                            <ul class="feature-stack"><li>Gemini</li><li>OpenAI</li><li>RAG</li><li>Function calling</li><li>Python</li></ul>
+                            <div class="feature-links">
+                                <a href="https://github.com/danielresende23/kpi-rag-agent" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
