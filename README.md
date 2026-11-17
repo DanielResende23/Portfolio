@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  Desenvolvedor de BI Sênior · Analytics Engineer · Dados e IA no ecossistema Microsoft
+  Analista de BI Sênior · Analytics Engineer · Dados e IA no ecossistema Microsoft
 </h4>
 
   <img alt="" title="" src="./Imagens/Group 30.jpg/">
@@ -15,7 +15,7 @@
 
 - **Início:** apresentação e foco de atuação;
 - **Sobre mim:** modelagem, engenharia de dados, BI como código e IA aplicada;
-- **Serviços:** modelos semânticos, engenharia de dados, Power BI corporativo, IA e automação;
+- **Serviços:** dashboards e análises, modelagem, engenharia e governança, IA e automação;
 - **Arquitetura:** como construo uma solução de dados (Fontes → Bronze → Silver → Gold → modelo semântico → consumo);
 - **Projetos:** relatórios publicados e destaques;
 - **Lab:** projetos com código aberto (Fabric, Databricks, modelo AI-ready, dbt, Customer Support Analytics e agente de IA com RAG);
@@ -24,7 +24,7 @@
 
 ## 🧰 Stack
 
-Microsoft Fabric · Power BI · DAX · Power Query · SQL · Python · PySpark · Databricks · Azure · Copilot Studio · Power Automate · Git · PBIP / TMDL
+Power BI · DAX · Power Query · SQL · Microsoft Fabric · Databricks · Python · PySpark · dbt · Azure · Azure DevOps · SAP · Power Apps · Power Automate · Copilot Studio · Git · PBIP / TMDL
 
 ## 💻 Site
 

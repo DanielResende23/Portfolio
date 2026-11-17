@@ -3684,6 +3684,12 @@ main > section {
     color: var(--warm);
 }
 
+/* Cards de dashboards no mesmo padrão dos cards de projetos */
+.feature-grid.dashboard-grid {
+    margin-bottom: 0;
+    max-width: 1040px;
+}
+
 @media (max-width: 1100px) {
     .feature-grid.three {
         grid-template-columns: repeat(2, minmax(0, 1fr));
