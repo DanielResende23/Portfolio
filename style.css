@@ -3684,6 +3684,88 @@ main > section {
     color: var(--warm);
 }
 
+/* Do dashboard à operação: projeto de Power Platform que continua o case do dashboard */
+.ops-connector {
+    align-items: center;
+    color: var(--accent-strong);
+    display: flex;
+    flex-direction: column;
+    font-size: 12.5px;
+    font-weight: 700;
+    gap: 8px;
+    letter-spacing: 0.5px;
+    margin: -40px auto 16px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.ops-connector::before {
+    background: linear-gradient(transparent, var(--accent-strong));
+    content: "";
+    height: 28px;
+    width: 2px;
+}
+
+.ops-case {
+    background: var(--surface);
+    border: 1px solid rgba(23, 199, 184, 0.3);
+    border-radius: 16px;
+    margin: 0 auto 56px;
+    max-width: 1040px;
+    padding: 30px;
+}
+
+.ops-case-body {
+    align-items: center;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    margin-top: 22px;
+}
+
+.ops-case-img {
+    aspect-ratio: 16 / 9;
+    background: #0b1620;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    display: block;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.ops-case-img:hover {
+    border-color: rgba(23, 199, 184, 0.5);
+    transform: translateY(-3px);
+}
+
+.ops-case-img img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.ops-case-text p {
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.65;
+    margin-bottom: 8px;
+}
+
+.ops-case-text strong {
+    color: var(--warm);
+}
+
+@media (max-width: 900px) {
+    .ops-case-body {
+        grid-template-columns: 1fr;
+    }
+
+    .ops-case {
+        padding: 22px;
+    }
+}
+
 /* Cards de dashboards no mesmo padrão dos cards de projetos */
 .feature-grid.dashboard-grid {
     margin-bottom: 0;
